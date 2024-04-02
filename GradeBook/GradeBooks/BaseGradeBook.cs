@@ -125,6 +125,8 @@ namespace GradeBook.GradeBooks
                 case 'F':
                     return 0;
             }
+            if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                return 1;
             return 0;
         }
 
